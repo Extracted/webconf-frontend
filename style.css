@@ -1,0 +1,76 @@
+body{
+	margin: 0;
+		padding: 0;
+}
+#contentContainer {
+	display: inline-block;
+	padding: 10px;
+	width: 100%;
+	float: left;
+}
+.pageContainer{
+	display: inline-block;
+}
+.inputContainer{
+	float: left;
+	margin-right: 20;
+}
+.inputContainer > .field{
+	padding: 5px;
+}
+.inputContainer > .text{}
+.inputContainer > .button{
+	margin: 10px;
+	padding: 10px;
+}
+.itemsContainer{
+	float: left;
+	width: 250px;
+	margin-right: 20;
+}
+.itemsContainer > .text{}
+.itemsContainer > .list{}
+.itemsContainer > .list > .li > .element{
+	background-color: blue;
+	display: block;
+}
+.itemsContainer > .list > .li > .element > span{}
+.itemsContainer > .list > .li > .element > button{
+}
+#responseContainer{
+	float: left;
+	width: 400;
+	min-height: 400;
+}
+#menubar ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+}
+#menubar li {
+		float: left;
+}
+#menubar li span {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+}
+#menubar li span:hover {
+		background-color: #111;
+}
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;           /* Non-prefixed version, currently
+																	not supported by any browser */
+}
+.hidden{
+	display: none;
+}

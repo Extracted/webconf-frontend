@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+		<div id="menuBar">
+			<ul>
+				<li><span id="vlansButton" class="noselect">Vlans</span></li>
+				<li><span id="interfacesButton" class="noselect">Interfaces</span></li>
+
+				<li style="float: right;"><span id="saveButton" class="noselect">Save</span></li>
+			</ul>
+		</div>
+
+		<div id="contentContainer">
+
+			<div id="vlanContainer" class="pageContainer">
+
+				<div id="addVlanContainer" class="inputContainer">
+					<span class="text"><b>Add new vlan</b></span><br>
+					<input class="field" type="text" id="vlanNameInput" placeholder="Name"></input><br>
+					<input class="field" type="text" id="vlanIdInput" placeholder="Id"></input><br>
+					<input class="field" type="text" id="vlanEstSlotSynchInput" placeholder="Est-slot-synch"></input><br>
+					<input class="field" type="text" id="vlanEstDirectInput" placeholder="Est-direct"></input><br>
+					<button class="button" id="addVlan">Add vlan</button>
+				</div>
+
+				<div class="itemsContainer" id="vlanItems">
+					<span class="text"><b>Vlans</b></span><br>
+					<ul class="list" id="vlans">
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="interfaceContainer" class="pageContainer">
+
+				<div id="addInterfaceContainer" class="inputContainer">
+					<span class="text"><b>Add new interface</b></span><br>
+					<input class="field" type="text" id="interfaceNameInput" placeholder="Name"></input><br>
+					<input class="field" type="text" id="interfaceIdInput" placeholder="Id"></input><br>
+					<input class="field" type="text" id="interfaceEstSlotSynchInput" placeholder="Est-slot-synch"></input><br>
+					<input class="field" type="text" id="interfaceEstDirectInput" placeholder="Est-direct"></input><br>
+					<button class="button" id="addInterface">Add interface</button>
+				</div>
+
+				<div class="itemsContainer" id="ifaceItems">
+					<span class="text"><b>Interfaces</b></span><br>
+					<ul class="list" id="interfaces">
+					</ul>
+				</div>
+
+			</div>
+
+			<textarea id="responseContainer">
+				Server response shows here
+			</textarea>
+
+		</div>
+
+		<script data-main="scripts/webconf.js" src="scripts/require.js"></script>
+	</body>
+</html>
